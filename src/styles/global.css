@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 img {
@@ -19,4 +19,13 @@ a {
 ul,
 li {
   list-style: none;
+}
+
+.trending .slick-dots{
+  margin-top: 1rem;
+  position: static;
+}
+
+.trending .slick-dots .slick-active button::before {
+  color: #ff805d !important;
 }

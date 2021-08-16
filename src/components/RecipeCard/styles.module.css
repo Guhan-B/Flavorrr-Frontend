@@ -1,0 +1,95 @@
+.card {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  border: 1px solid #dddddd;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.card .header {
+  height: 180px;
+  width: 100%;
+}
+
+.card .header img {
+  width: 100%;
+  height: 180px;
+  display: block;
+}
+
+.card .body {
+  flex: 1;
+  padding: 1rem;
+}
+
+.card .body .tag_n_type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.card .body .tag_n_type span {
+  background-color: rgba(255, 128, 93, 0.25);
+  color: #ff805d;
+  font-size: 0.8rem;
+  padding: 0.25rem 1rem;
+  border-radius: 2px;
+}
+
+.card .body .tag_n_type img {
+  width: 16px;
+  height: 16px;
+}
+
+.card .body .name {
+  font-size: 1rem;
+}
+
+.card .body .author {
+  color: rgba(255, 128, 93, 1);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.card .body .description {
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  color: #4f4f4f;
+}
+.card .body .rating div {
+  display: flex;
+  gap: 0.25rem;
+}
+.card .body .rating div span {
+  width: 18px;
+  height: 18px;
+  background-color: #E8F839;
+  display: block;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.card .body .rating {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.card .body .rating p{
+    font-size: 0.8rem;
+    color: #4f4f4f;
+}

@@ -1,0 +1,38 @@
+.input_group {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+
+.input_group .radio {
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: 2px solid #939598;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input_group .radio .active {
+  width: 10px;
+  height: 10px;
+  background-color: transparent;
+  transition: 0.1s all ease-in-out;
+  display: block;
+}
+
+.radio_input {
+  display: none;
+}
+
+.radio_input:checked ~ .input_group .radio {
+  border-color: #ff805d;
+}
+
+.radio_input:checked ~ .input_group .radio .active {
+  background-color: #ff805d;
+}
