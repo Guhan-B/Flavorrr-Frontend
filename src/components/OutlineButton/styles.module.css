@@ -1,6 +1,6 @@
 .button{
-    background-color: transparent;
-    border: 2px solid #FF805D;
+    background-color: rgba(255, 128, 93, 0.2);
+    border: 2px solid transparent;
     border-radius: 2px;
     padding: 0.5rem 2rem;
     font-weight: 500;
@@ -8,6 +8,15 @@
     color: #FF805D;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.button img{
+    width: 20px;
+    height: 20px;
 }
 
 .button:hover{

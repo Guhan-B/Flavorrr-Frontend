@@ -29,3 +29,8 @@ li {
 .trending .slick-dots .slick-active button::before {
   color: #ff805d !important;
 }
+
+.trending .slick-list .slick-track{
+  display: flex;
+  gap: 1rem;
+}

@@ -1,7 +1,7 @@
 .nav {
   width: 90%;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -14,9 +14,10 @@
 }
 
 .nav div a {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
+  color: #4f4f4f;
 }
 
 .nav img {

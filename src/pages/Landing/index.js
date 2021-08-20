@@ -9,6 +9,10 @@ import styles from "./styles.module.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import BOWL_IMAGE from "../../assets/images/bowl.png";
+import RECIPE_ICON from "../../assets/icons/recipe.svg";
+import CONTRIBUTER_ICON from "../../assets/icons/contribute.svg";
+import CATEGORY_ICON from "../../assets/icons/category.svg";
+import RATING_ICON from "../../assets/icons/rating.svg";
 
 function LandingPage(props) {
     const settings = {
@@ -22,10 +26,10 @@ function LandingPage(props) {
     return (
         <>
             <section className={styles.showcase}>
-                <Navigation/>
+                <Navigation />
                 <div className={styles.container}>
                     <h1>Delicious Recipes <br /> For You</h1>
-                    <p>
+                    <p className={styles.description}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                         Morbi pretium massa in felis faucibus, et blandit ligula fringilla.
                         Nam sit amet orci ante.
@@ -47,20 +51,40 @@ function LandingPage(props) {
             <section className={styles.numbers}>
                 <div className={styles.container}>
                     <div className={styles.number}>
-                        <h2>400</h2>
-                        <p>Recipes</p>
+                        <span className={styles.icon}>
+                            <img src={RECIPE_ICON} alt="recipes" />
+                        </span>
+                        <span className={styles.text}>
+                            <h2>400</h2>
+                            <p>Avalible Recipes</p>
+                        </span>
                     </div>
                     <div className={styles.number}>
-                        <h2>105</h2>
-                        <p>Contributers</p>
+                        <span className={styles.icon}>
+                            <img src={CONTRIBUTER_ICON} alt="recipes" />
+                        </span>
+                        <span className={styles.text}>
+                            <h2>105</h2>
+                            <p>Contributers</p>
+                        </span>
                     </div>
                     <div className={styles.number}>
-                        <h2>20</h2>
-                        <p>Categories</p>
+                        <span className={styles.icon}>
+                            <img src={CATEGORY_ICON} alt="recipes" />
+                        </span>
+                        <span className={styles.text}>
+                            <h2>20</h2>
+                            <p>Categories</p>
+                        </span>
                     </div>
                     <div className={styles.number}>
-                        <h2>200</h2>
-                        <p>Ratings</p>
+                        <span className={styles.icon}>
+                            <img src={RATING_ICON} alt="recipes" />
+                        </span>
+                        <span className={styles.text}>
+                            <h2>200</h2>
+                            <p>User Rating</p>
+                        </span>
                     </div>
                 </div>
             </section>

@@ -1,5 +1,5 @@
 .card {
-  width: 330px;
+  /* width: 330px; */
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -58,38 +58,26 @@
 .card .body .description {
   font-size: 0.8rem;
   margin-top: 0.5rem;
-  color: #4f4f4f;
-}
-.card .body .rating div {
-  display: flex;
-  gap: 0.25rem;
-}
-.card .body .rating div span {
-  width: 18px;
-  height: 18px;
-  background-color: #E8F839;
-  display: block;
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
+  color: #5f5f5f;
 }
 
 .card .body .rating {
-    margin-top: 1rem;
-    display: flex;
-    gap: 0.5rem;
+  margin-top: 1rem;
+  display: flex;
 }
 
-.card .body .rating p{
-    font-size: 0.8rem;
-    color: #4f4f4f;
+.card .body .rating span {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card .body .rating span img {
+  width: 24px;
+  height: 24px;
+}
+
+.card .body .rating span p {
+  color: #5f5f5f;
+  font-size: 0.8rem;
 }

@@ -1,6 +1,7 @@
 import styles from "./styles.module.css";
 import IMAGE from "../../assets/images/register-image.jpg";
 import VEG from "../../assets/icons/Veg.svg";
+import HEART from "../../assets/icons/heart.svg";
 
 function RecipeCard() {
     return (
@@ -17,14 +18,10 @@ function RecipeCard() {
                 <p className={styles.author}>By Monica Geller</p>
                 <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat massa non nisl molestie, sit amet auctor elit bibendum</p>
                 <div className={styles.rating}>
-                    <div>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <p>(255)</p>
+                    <span>
+                        <img src={HEART} alt="Likes" />
+                        <p>250</p>
+                    </span>
                 </div>
             </div>
         </div>
