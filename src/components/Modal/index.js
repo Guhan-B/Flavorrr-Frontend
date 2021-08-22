@@ -3,10 +3,8 @@ import styles from "./styles.module.css";
 function Modal(props) {
     return (
         <>
-            <div className={styles.modal}>
-                {props.children}
-            </div>
-            <div className={styles.backdrop}></div>
+            {props.visible && <div className={styles.modal}>{props.children}</div>}
+            {props.visible && <div className={styles.backdrop}></div>}
         </>
     )
 }

@@ -1,0 +1,158 @@
+.container {
+  width: 90%;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.container .header {
+  margin-bottom: 4rem;
+}
+
+.container .header .name {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.container .header .count {
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.container .header .description {
+  font-size: 0.9rem;
+  max-width: 900px;
+  width: 100%;
+  margin-bottom: 2rem;
+  color: #939598;
+}
+
+.container .header .user_data {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .header .user_data .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.container .header .user_data .user img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: cover;
+  border-radius: 40px;
+}
+
+.container .header .user_data .actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container .header .user_data .actions button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+}
+
+.container .header .user_data .actions .delete {
+  background-color: transparent;
+  color: var(--red-dark-color);
+  font-weight: 500;
+  border: none;
+  transition: 0.2s all ease-in-out;
+  border: 1px solid transparent;
+}
+.container .header .user_data .actions .delete:hover {
+  background-color: var(--red-light-color);
+}
+
+.container .recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  column-gap: 1rem;
+  row-gap: 3rem;
+}
+
+.edit_modal {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+}
+
+.edit_modal header {
+  margin-bottom: 2rem;
+}
+
+.edit_modal section {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1rem;
+}
+
+.edit_modal section div span {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.edit_modal section div span .label {
+  font-size: 0.9rem;
+}
+
+.edit_modal section div span .length {
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.edit_modal footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.edit_modal footer button {
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.edit_modal footer button p {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+/* create a new button component */
+.edit_modal footer .cancel {
+  background-color: transparent;
+  color: rgb(95, 95, 95);
+  font-weight: 500;
+  border: none;
+  transition: 0.2s all ease-in-out;
+  border: 1px solid transparent;
+}
+.edit_modal footer .cancel:hover {
+  background-color: rgba(95, 95, 95, 0.1);
+}
+/* ============================= */
+
+@media only screen and (max-width: 650px) {
+  .container .header {
+    margin-bottom: 2rem;
+  }
+  .container .header .description {
+    margin-bottom: 1rem;
+  }
+  .container .header .user_data {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3rem;
+  }
+}

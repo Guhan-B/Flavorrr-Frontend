@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./styles.module.css";
 
-function TextInput(props) {
+function TextareaInput(props) {
     const [inputStyle, setInputStyle] = React.useState({
         backgroundColor: "var(--grey-light-color)",
     });
@@ -23,12 +23,9 @@ function TextInput(props) {
 
     return (
         <div style={inputStyle} className={styles.input_group}>
-            {props.icon && <img className={styles.icon} src={props.icon} alt="icon" />}
-            <div className={styles.input_area}>
-                <input type="text" placeholder={props.placeholder} onFocus={onTextInputFocus} onBlur={onTextInputBlur} />
-            </div>
+            <textarea type="text" placeholder={props.placeholder} onFocus={onTextInputFocus} onBlur={onTextInputBlur} />
         </div>
     )
 }
 
-export default TextInput;
+export default TextareaInput;

@@ -4,10 +4,15 @@ import IMAGE_1 from "../../assets/images/image_1.jpg";
 import IMAGE_2 from "../../assets/images/image_2.jpg";
 import IMAGE_3 from "../../assets/images/image_3.jpg";
 import IMAGE_4 from "../../assets/images/image_4.jpg";
+import { withRouter } from "react-router-dom";
 
-function CollectionCard() {
+function CollectionCard(props) {
+    const onCardClick = () => {
+        props.history.push("/collection/1")
+    }
+
     return (
-        <div className={styles.card}>
+        <div className={styles.card} onClick={onCardClick}>
             <div className={styles.thumbnail}>
                 <div className={styles.latest}>
                     <img src={IMAGE_1} alt="latest" />
@@ -26,4 +31,4 @@ function CollectionCard() {
     )
 }
 
-export default CollectionCard
+export default withRouter(CollectionCard);

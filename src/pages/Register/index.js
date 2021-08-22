@@ -11,9 +11,7 @@ function RegisterPage() {
     return (
         <div className={styles.container}>
             <div className={styles.form_section}>
-                <header>
-                    <img src={LOGO} alt="LOGO" />
-                </header>
+                <img className={styles.form_logo} src={LOGO} alt="LOGO" />
                 <section>
                     <h1>Join Flavorrr</h1>
                     <p>Become a part of an amazing food community! fill the necessary details below</p>

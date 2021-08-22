@@ -7,20 +7,99 @@
   justify-content: space-between;
 }
 
-.nav div {
+.nav .left {
   display: flex;
-  align-items: center;
   gap: 3rem;
 }
 
-.nav div a {
-  font-size: 0.95rem;
-  font-weight: 500;
-  cursor: pointer;
-  color: #4f4f4f;
+.nav .search{
+  width: 50%;
+  position: relative;
 }
 
-.nav img {
+.nav .search img{
+  width: 18px;
+  height: 18px;
+}
+
+.nav .search .search_autocomplete{
+  background-color: var(--white-color);
+  position: absolute;
+  width: 100%;
+  top: 60px;
+  left: 0;
+  z-index: 6;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.3);
+  display: none;
+}
+
+.nav .search .search_autocomplete p{
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.nav .search .search_autocomplete p:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav .left .logo {
   width: 130px;
   object-fit: contain;
+}
+
+.nav .left div img {
+  width: 16px;
+  object-fit: contain;
+}
+
+.nav .right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav .right div img {
+  width: 16px;
+  object-fit: contain;
+}
+
+.nav .right .icon_button {
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.nav .right .icon_button img{
+  width: 20px;
+  height: 20px;
+}
+
+.nav .right .icon_button:hover{
+  background-color: var(--primary-light-color);
+}
+
+.nav .right .profile {
+  background-color: none;
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+
+.nav .right .profile img {
+  width: 40px;
+  height: 40px;
+  display: block;
+  object-fit: cover;
+  border-radius: 40px;
 }

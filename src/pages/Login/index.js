@@ -11,9 +11,7 @@ function LoginPage() {
     return (
         <div className={styles.container}>
             <div className={styles.form_section}>
-                <header>
-                    <img src={LOGO} alt="LOGO" />
-                </header>
+                <img className={styles.form_logo} src={LOGO} alt="LOGO" />
                 <section>
                     <h1>Login to Flavorrr</h1>
                     <p>Welcome back! login with your data that you entered during registration </p>

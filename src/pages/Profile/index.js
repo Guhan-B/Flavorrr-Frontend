@@ -53,13 +53,16 @@ function ProfilePage(props) {
                             <h1>Monica Geller</h1>
                             <p className={styles.location_and_count}>Chennai, India <span>&middot;</span> 344 Followers</p>
                             <p className={styles.bio}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat massa non nisl molestie, sit amet auctor elit bibendum, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat massa non nisl molestie, sit amet auctor elit bibendum
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas blandit pretium metus, ut tincidunt ipsum pretium et. Curabitur quis egestas lorem, vitae volutpat neque. Sed bibendum neque eu justo mattis rhoncus.
                             </p>
 
                         </div>
-                        <div className={styles.actions}>
+                        {/* this commented code will switch dynamically based on authentication */}
+                        {/* <div className={styles.actions}>
                             <PrimaryButton title="Follow" />
                             <OutlineButton title="Visit Website" icon={VISIT_ICON} />
+                        </div> */}
+                        <div className={styles.actions}>
                             <PrimaryButton title="Upload Recipe" />
                             <OutlineButton title="Edit Profile" icon={EDIT_ICON} />
                         </div>

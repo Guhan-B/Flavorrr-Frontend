@@ -41,7 +41,7 @@
   font-size: 0.95rem;
   line-height: 1.6;
   margin-bottom: 2rem;
-  color: #5f5f5f;
+  color: var(--grey-dark-color);
 }
 
 .showcase .container .actions {
@@ -77,7 +77,7 @@
 }
 
 .numbers .container .number .icon {
-  background-color: rgba(255, 128, 93, 0.2);
+  background-color: var(--primary-light-color);
   padding: 1.25rem;
   display: flex;
   align-items: center;
@@ -93,11 +93,12 @@
 .numbers .container .number .text h2 {
   font-size: 2rem;
   line-height: 1;
+  margin-bottom: 0.15rem;
 }
 
 .numbers .container .number .text p {
   font-weight: 500;
-  color: #5f5f5f;
+  color: var(--grey-dark-color);
 }
 
 .contribute {
@@ -123,12 +124,12 @@
 }
 
 .contribute .container h1 {
-  color: #ffffff;
+  color: var(--white-color);
   margin-bottom: 2rem;
 }
 
 .footer {
-  background-color: #5f5f5f;
+  background-color: var(--grey-dark-color);
 }
 
 .footer .container {
@@ -148,19 +149,19 @@
 .footer .container div a {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #ddd;
+  color: var(--grey-light-color);
   cursor: pointer;
   transition: 0.2s all ease-in-out;
 }
 
 .footer .container div a:hover {
-  color: #fff;
+  color: var(--white-color);
 }
 
 .footer .container p {
   font-size: 0.8rem;
   font-weight: 500;
-  color: #ddd;
+  color: var(--grey-light-color);
 }
 
 @keyframes bowl-rotate {
