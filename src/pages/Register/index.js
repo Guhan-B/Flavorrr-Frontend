@@ -23,7 +23,7 @@ function RegisterPage() {
                         <div className={styles.footer}>
                             <p>Forget Password?</p>
                         </div>
-                        <PrimaryButton title="Register" type="button" />
+                        <PrimaryButton title="Register" type="primary" />
                     </form>
                     <footer>
                         <p>Already have an account? <span>Login Here</span></p>

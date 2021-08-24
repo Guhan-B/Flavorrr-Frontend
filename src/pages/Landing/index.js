@@ -37,12 +37,12 @@ function LandingPage(props) {
                     <div className={styles.actions}>
                         <PrimaryButton
                             onClick={() => props.history.push('/sign-up')}
-                            type="button"
+                            type="primary"
                             title="Join Flavorrr"
                         />
                         <OutlineButton
                             onClick={() => props.history.push('/search')}
-                            type="button"
+                            type="primary"
                             title="Browse Recipes"
                         />
                     </div>
@@ -109,7 +109,7 @@ function LandingPage(props) {
                     <h1>Have some amazing recipes? Helps us out by contributing</h1>
                     <PrimaryButton
                         onClick={() => props.history.push('/register')}
-                        type="button"
+                        type="primary"
                         title="Join Flavorrr"
                     />
                 </div>

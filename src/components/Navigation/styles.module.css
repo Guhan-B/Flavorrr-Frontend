@@ -86,7 +86,7 @@
 }
 
 .nav .right .icon_button:hover{
-  background-color: var(--primary-light-color);
+  background-color: rgba(255, 97, 53,0.1);
 }
 
 .nav .right .profile {

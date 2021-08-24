@@ -1,6 +1,6 @@
 import styles from "./styles.module.css";
 
-function OutlineButton(props) {
+function AccentButton(props) {
     const classes = [styles.button, styles[props.type]].join(" ");
     return (
         <button className={classes} type={props.action} onClick={props.onClick}>
@@ -10,4 +10,4 @@ function OutlineButton(props) {
     )
 }
 
-export default OutlineButton;
+export default AccentButton;

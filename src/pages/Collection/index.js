@@ -1,6 +1,7 @@
 import Navigation from "../../components/Navigation";
 import RecipeCard from "../../components/RecipeCard";
 import OutlineButton from "../../components/OutlineButton";
+import AccentButton from "../../components/AccentButton";
 import Modal from "../../components/Modal";
 
 import styles from "./styles.module.css";
@@ -37,8 +38,15 @@ function CollectionPage() {
                         </div>
                     </section>
                     <footer>
-                        <button onClick={() => setShowEdit(false)} className={styles.cancel}>Cancel</button>
-                        <OutlineButton onClick={() => setShowEdit(false)} title="Save Changes" />
+                        <AccentButton
+                            onClick={() => setShowEdit(false)}
+                            title="Cancel"
+                        />
+                        <OutlineButton
+                            type="primary"
+                            onClick={() => setShowEdit(false)}
+                            title="Save Changes"
+                        />
                     </footer>
                 </div>
             </Modal>
@@ -55,8 +63,8 @@ function CollectionPage() {
                             <p>Monica Geller</p>
                         </div>
                         <div className={styles.actions}>
-                            <OutlineButton onClick={() => setShowEdit(true)} title="Edit Collection" />
-                            <button className={styles.delete}>Delete Collection</button>
+                            <OutlineButton type="primary" onClick={() => setShowEdit(true)} title="Edit Collection" />
+                            <AccentButton type="danger" onClick={() => setShowEdit(true)} title="Delete Collection" />
                         </div>
                     </div>
                 </div>

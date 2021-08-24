@@ -63,8 +63,8 @@ function ProfilePage(props) {
                             <OutlineButton title="Visit Website" icon={VISIT_ICON} />
                         </div> */}
                         <div className={styles.actions}>
-                            <PrimaryButton title="Upload Recipe" />
-                            <OutlineButton title="Edit Profile" icon={EDIT_ICON} />
+                            <PrimaryButton type="primary" title="Upload Recipe" />
+                            <OutlineButton type="primary" title="Edit Profile" icon={EDIT_ICON} />
                         </div>
                     </header>
                     <section className={styles.tab_header}>

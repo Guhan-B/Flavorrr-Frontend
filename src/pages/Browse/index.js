@@ -29,7 +29,7 @@ function BrowsePage(props) {
                 <header>
                     <div className={styles.search_group}>
                         <h3 className={styles.result_heading}>Search results for "Momo"</h3>
-                        <OutlineButton title="Filter" icon={FILTER_ICON} />
+                        <OutlineButton type="primary" title="Filter" icon={FILTER_ICON} />
                     </div>
                 </header>
 

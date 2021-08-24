@@ -1,0 +1,48 @@
+.button{
+  background-color: transparent;
+  border: 2px solid transparent;
+  color: var(--grey-dark-color);
+  border-radius: 2px;
+  padding: 0.5rem 2rem;
+  font-weight: 500;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.button img{
+  width: 20px;
+  height: 20px;
+}
+
+.button:hover{
+  background-color: rgba(95, 95, 95,0.1);
+}
+
+.button.primary{
+  color: var(--primary-color);
+}
+
+.button.primary:hover{
+  background-color: rgba(255, 97, 53,0.1);
+}
+
+.button.success{
+  color: var(--green-color);
+}
+
+.button.success:hover{
+  background-color: rgba(28, 179, 41, 0.1);
+}
+
+.button.danger{
+  color: var(--red-color);
+}
+
+.button.danger:hover{
+  background-color: rgba(228, 47, 47, 0.1);
+}

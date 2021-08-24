@@ -28,7 +28,7 @@ function LoginPage() {
                             />
                             <p>Forget Password?</p>
                         </div>
-                        <PrimaryButton title="Login" type="button" />
+                        <PrimaryButton title="Login" type="primary" />
                     </form>
                     <footer>
                         <p>Don’t have an account? <span>Register Here</span></p>
