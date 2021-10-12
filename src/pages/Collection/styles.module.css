@@ -36,7 +36,15 @@
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+.container .header .user_data .user .username {
   font-weight: 500;
+}
+
+.container .header .user_data .user .last_edited {
+  font-size: 0.75rem;
+  color: var(--grey-dark-color);
 }
 
 .container .header .user_data .user img {
@@ -129,19 +137,6 @@
   font-size: 0.9rem;
   font-weight: 400;
 }
-/* create a new button component */
-.edit_modal footer .cancel {
-  background-color: transparent;
-  color: rgb(95, 95, 95);
-  font-weight: 500;
-  border: none;
-  transition: 0.2s all ease-in-out;
-  border: 1px solid transparent;
-}
-.edit_modal footer .cancel:hover {
-  background-color: rgba(95, 95, 95, 0.1);
-}
-/* ============================= */
 
 @media only screen and (max-width: 650px) {
   .container .header {

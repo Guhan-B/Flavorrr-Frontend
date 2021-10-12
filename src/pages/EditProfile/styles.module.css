@@ -1,0 +1,247 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 65%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.container header {
+  margin-bottom: 2rem;
+}
+
+.container header h1 {
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.container header p {
+  font-size: 0.95rem;
+}
+
+.container .edit_section {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+}
+
+.container .edit_section nav {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.container .edit_section nav button {
+  background-color: transparent;
+  border: none;
+  padding: 0.65rem 1rem;
+  font-size: 0.9rem;
+  text-align: left;
+  font-weight: 500;
+  border-left: 3px solid transparent;
+  color: var(--grey-dark-color);
+  cursor: pointer;
+  transition: 0.1s all ease-in-out;
+}
+
+.container .edit_section nav button.active {
+  background-color: var(--primary-light-color);
+  border-left: 3px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.container .edit_section .selected_setting {
+  padding: 0rem 4rem;
+}
+
+.edit_profile .input_group {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.edit_profile .input_group label {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.edit_profile .input_group p.input_name{
+  font-size: 0.85rem;
+  margin-top: 0.35rem;
+  color: var(--grey-dark-color);
+}
+
+.edit_profile .input_group label p.input_count{
+  font-size: 0.7rem;
+}
+
+.images {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.banner_image {
+  flex: 1;
+  height: 120px;
+}
+
+.banner_image label {
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.banner_image label .preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  z-index: 3;
+  position: relative;
+}
+
+.banner_image label .hover {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner_image input {
+  display: none;
+}
+
+.banner_image label:hover .hover {
+  opacity: 1;
+}
+
+.banner_image label .hover img {
+  width: 38px;
+  height: 38px;
+  opacity: 0.8;
+}
+
+.profile_image {
+  width: 120px;
+  height: 120px;
+}
+
+.profile_image label {
+  position: relative;
+  display: block;
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+.profile_image label .preview {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 2px;
+  z-index: 3;
+  position: relative;
+}
+
+.profile_image label .hover {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile_image input {
+  display: none;
+}
+
+.profile_image label:hover .hover {
+  opacity: 1;
+}
+
+.profile_image label .hover img {
+  width: 38px;
+  height: 38px;
+  opacity: 0.8;
+}
+
+.account_section {
+  padding-top: 1.5rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--grey-light-color);
+}
+
+.account_section h2 {
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.delete_account h2 {
+  color: var(--red-color);
+}
+
+.account_section p.description {
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.8;
+  color: var(--grey-dark-color);
+}
+
+.people{
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.people .person{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--grey-light-color);
+  padding: 0.75rem 0;
+}
+
+.people .person img{
+  width: 50px;
+  height: 50px;
+  border-radius: 2px;
+  margin-right: 1rem;
+}
+
+.people .person div h3{
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.people .person div p{
+  font-size: 0.85rem;
+  color: var(--grey-dark-color);
+}
+
+.people .person button{
+  margin-left: auto;
+}

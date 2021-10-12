@@ -15,7 +15,7 @@
   height: 800px;
   right: 0;
   top: 50%;
-  animation: bowl-rotate 35s;
+  animation: bowl-rotate 35s linear;
   animation-iteration-count: infinite;
   animation-timing-function: none;
 }

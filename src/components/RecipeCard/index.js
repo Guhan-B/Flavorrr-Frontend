@@ -1,4 +1,5 @@
 import styles from "./styles.module.css";
+import PROFILE from  "../../assets/images/person.jpg";
 import IMAGE from "../../assets/images/register-image.jpg";
 import VEG from "../../assets/icons/Veg.svg";
 import HEART from "../../assets/icons/heart.svg";
@@ -29,7 +30,10 @@ function RecipeCard(props) {
                     <img src={VEG} />
                 </div>
                 <h2 className={styles.name}>Schezwan paneer pan fried momos</h2>
-                <p className={styles.author}>By Monica Geller</p>
+                <span className={styles.author}>
+                    <img src={PROFILE}/>
+                    <p>Monica Geller</p>
+                </span>
                 <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer feugiat massa non nisl molestie, sit amet auctor elit bibendum</p>
                 <div className={styles.rating}>
                     <p>250 Likes <span>&middot;</span> 1 month ago</p>

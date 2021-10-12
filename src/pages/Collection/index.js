@@ -1,21 +1,21 @@
-import Navigation from "../../components/Navigation";
+import React from "react"; 
+
 import RecipeCard from "../../components/RecipeCard";
 import OutlineButton from "../../components/OutlineButton";
 import AccentButton from "../../components/AccentButton";
 import Modal from "../../components/Modal";
+import TextInput from "../../components/TextInput"; 
+import TextareaInput from "../../components/TextareaInput" ;
 
 import styles from "./styles.module.css";
 import PROFILE from "../../assets/images/person.jpg";
-import TextInput from "../../components/TextInput";
-import TextareaInput from "../../components/TextareaInput";
-import React from "react";
+import FORK from  "../../assets/icons/Download.svg";
 
 function CollectionPage() {
     const [showEdit, setShowEdit] = React.useState(false);
 
     return (
         <>
-            <Navigation />
             <Modal visible={showEdit} hide={() => setShowEdit(false)}>
                 <div className={styles.edit_modal}>
                     <header>
@@ -60,9 +60,13 @@ function CollectionPage() {
                     <div className={styles.user_data}>
                         <div className={styles.user}>
                             <img src={PROFILE} />
-                            <p>Monica Geller</p>
+                            <span>
+                                <p className={styles.username}>Monica Geller</p>
+                                <p className={styles.last_edited}>Last edited 21 Jan, 2020</p>
+                            </span>
                         </div>
                         <div className={styles.actions}>
+                            {/* <OutlineButton type="primary" icon={FORK} title="Copy Collection" /> */}
                             <OutlineButton type="primary" onClick={() => setShowEdit(true)} title="Edit Collection" />
                             <AccentButton type="danger" onClick={() => setShowEdit(true)} title="Delete Collection" />
                         </div>

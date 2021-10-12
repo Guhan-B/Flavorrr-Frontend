@@ -31,7 +31,7 @@ function Navigation(props) {
             {/* <div className={styles.right}>
                 <OutlineButton
                     onClick={() => props.history.push('/sign-up')}
-                    type="button"
+                    type="primary"
                     title="Sign In"
                 />
             </div> */}

@@ -85,10 +85,25 @@
 .card .body .name {
   font-size: 1rem;
   line-height: 1;
-  margin-bottom: 0.15rem;
+  margin-bottom: 0.5rem;
 }
 
+
 .card .body .author {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+
+.card .body .author img{
+  width: 25px;
+  height: 25px;
+  border-radius: 30px;
+}
+
+.card .body .author p{
   color: var(--primary-color);
   font-weight: 500;
   font-size: 0.9rem;

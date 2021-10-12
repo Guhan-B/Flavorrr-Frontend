@@ -1,5 +1,5 @@
 import React from "react";
-import { Editor, EditorState, RichUtils, getDefaultKeyBinding } from "draft-js";
+import { Editor, EditorState, RichUtils, getDefaultKeyBinding, convertToRaw } from "draft-js";
 
 import "./styles.css";
 import "draft-js/dist/Draft.css"
@@ -13,14 +13,15 @@ import UNDERLINE from "../../assets/icons/editor/underline.svg";
 import UNDO from "../../assets/icons/editor/undo.svg";
 import REDO from "../../assets/icons/editor/redo.svg";
 
-class RichEditorExample extends React.Component {
+class RichTextEditor extends React.Component {
     constructor(props) {
         super(props);
         this.state = { editorState: EditorState.createEmpty() };
 
         this.focus = () => this.refs.editor.focus();
         this.onChange = (editorState) => {
-            console.log(editorState);
+            const editorJSON = JSON.stringify(convertToRaw(editorState.getCurrentContent()));
+            console.log(editorJSON);
             this.setState({ editorState });
         };
 
@@ -229,10 +230,10 @@ const StateControls = (props) => {
     const onClick = (type) => {
         console.log(editorState.getUndoStack());
         if (type.label === 'Undo') {
-            return props.onChange(EditorState.undo(editorState))
+            return props.onChange(EditorState.undo(editorState));
         }
         if (type.label === 'Redo') {
-            return props.onChange(EditorState.redo(editorState))
+            return props.onChange(EditorState.redo(editorState));
         }
     }
 
@@ -262,4 +263,4 @@ const StateControls = (props) => {
 }
 
 
-export default RichEditorExample;
+export default RichTextEditor;

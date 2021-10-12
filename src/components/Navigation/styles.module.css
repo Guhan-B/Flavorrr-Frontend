@@ -13,8 +13,10 @@
 }
 
 .nav .search{
-  width: 50%;
+  width: 300px;
   position: relative;
+  margin-left: auto;
+  margin-right: 2rem;
 }
 
 .nav .search img{
