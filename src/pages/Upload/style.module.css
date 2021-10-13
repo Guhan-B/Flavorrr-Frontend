@@ -5,7 +5,7 @@
 }
 
 .container header {
-    margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
 
 .container header input {
@@ -35,16 +35,17 @@
 }
 
 .container .recipe_meta {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 2rem;
+  margin-bottom: 3rem;
 }
 
-.container .recipe_meta .input_group label{
-    font-size: 0.85rem;
-    font-weight: 500;
-    margin-bottom: 0.25rem;
-    display: block;
+.container .recipe_meta .input_group label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  display: block;
 }
 
 .container .recipe_image {
@@ -64,7 +65,7 @@
   transition: 0.2s all ease-in-out;
 }
 
-.container .recipe_image .preview .placeholder:hover{
+.container .recipe_image .preview .placeholder:hover {
   opacity: 1;
 }
 
@@ -72,7 +73,134 @@
   display: none;
 }
 
-.container .recipe_image img {
+.container .recipe_image .image {
+  position: relative;
+  cursor: pointer;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.container .recipe_image .image img {
   width: 100%;
   height: 500px;
+  display: block;
+}
+
+.container .recipe_image .image .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--backdrop-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  font-size: 1.5rem;
+  opacity: 0;
+  transition: 0.2s all ease-in-out;
+}
+
+.container .recipe_image .image:hover .overlay {
+  opacity: 1;
+}
+
+.container .recipe_description {
+  margin-bottom: 3rem;
+}
+
+.container .recipe_description label.label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.container .recipe_description .description_preview {
+  margin-top: 2rem;
+}
+
+.container .recipe_instruction .label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.container .recipe_instruction .instruction_preview {
+  margin-top: 2rem;
+}
+
+.container .recipe_ingeridants .label {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+
+.container .recipe_ingeridants {
+  margin-bottom: 3rem;
+}
+
+.container .recipe_ingeridants .input {
+  display: grid;
+  grid-template-columns: 1fr 150px 150px 70px;
+  gap: 1rem;
+}
+
+.container .recipe_ingeridants ul {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75rem;
+}
+
+.container .recipe_ingeridants ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 1px solid #eee;
+  padding: 0.5rem 1rem;
+  transition: 0.2s all ease-in-out;
+}
+
+.container .recipe_ingeridants ul li:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.container .recipe_ingeridants ul li:last-of-type {
+  border: none;
+}
+
+.container .recipe_ingeridants ul li .quantity {
+  color: var(--primary-color);
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: auto;
+  margin-right: 3rem;
+}
+
+.container .recipe_ingeridants ul li .remove {
+  background-color: transparent;
+  border: none;
+  color: var(--red-color);
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  padding: 0.25rem 0.7rem;
+  border-radius: 2px;
+  transition: 0.2s all ease-in-out;
+}
+
+.container .recipe_ingeridants ul li .remove:hover {
+  background-color: var(--red-light-color);
+}
+
+.container footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 3rem;
 }

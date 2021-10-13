@@ -26,8 +26,7 @@ const Editor = (props) => {
                 editor={ClassicEditor}
                 data={props.text}
                 onChange={onChange}
-                config={config}
-                
+                config={config}     
             />
         </div>
     );

@@ -8,6 +8,8 @@ function SelectInput(props) {
 
     const [showOptions, setShowOptions] = React.useState(false);
 
+    const [value, setValue] = React.useState("");
+
     const onSelectInputFocus = (e) => {
         setInputStyle({
             backgroundColor: "var(--white-color)",
@@ -17,31 +19,49 @@ function SelectInput(props) {
         setShowOptions(true);
     }
     const onSelectInputBlur = (e) => {
+        console.log(ref);
         setInputStyle({
             backgroundColor: "var(--grey-light-color)",
             boxShadow: "none",
             border: "1px solid transparent"
         })
-        setShowOptions(false);
     }
+    const onChange = (e) => {
+        console.log("changed");
+        setValue(e.target.value);
+    }
+
+    const ref = React.useRef();
+
+    // Check for onBlur problem here
 
     return (
         <div style={inputStyle} className={styles.input_group}>
             {props.icon && <img className={styles.icon} src={props.icon} alt="icon" />}
             <div className={styles.input_area}>
-                <input type="text" placeholder={props.placeholder} onFocus={onSelectInputFocus} onBlur={onSelectInputBlur} />
+                <input
+                    ref={ref}
+                    type="text"
+                    value={value}
+                    onChange={onChange}
+                    placeholder={props.placeholder}
+                    onFocus={onSelectInputFocus}
+                    onBlur={onSelectInputBlur}
+                />
             </div>
             {props.postfix && <span className={styles.postfix}>{props.postfix}</span>}
             {
                 showOptions &&
-                <ul className={styles.options}>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
-                    <li>Option 1</li>
+                <ul id="options" className={styles.options} onBlur={() => console.log("HEHE")}>
+                    {
+                        props.options.map(
+                            option => <li key={option.label} onClick={(e) => {
+                                console.log(option.value)
+                                setValue(option.value)
+                                setShowOptions(false);
+                            }}>{option.label}</li>
+                        )
+                    }
                 </ul>
             }
         </div>
