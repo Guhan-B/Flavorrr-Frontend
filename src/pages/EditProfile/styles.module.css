@@ -60,6 +60,12 @@
   margin-bottom: 1rem;
 }
 
+.edit_profile .input_group .input_tip{
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  color: var(--grey-dark-color)
+}
+
 .edit_profile .input_group label {
   font-weight: 500;
   margin-bottom: 0.25rem;
@@ -206,7 +212,7 @@
 }
 
 .account_section p.description {
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   margin-bottom: 1.5rem;
   line-height: 1.8;
   color: var(--grey-dark-color);

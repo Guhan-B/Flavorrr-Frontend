@@ -119,7 +119,7 @@ const AccountSettingsTab = () => {
                     <p className={styles.input_name}>Username</p>
                 </label>
                 <TextInput />
-                <p>For your flavorrr profile URL: flavorrr.co/MrKnowhere</p>
+                <p className={styles.input_tip}>For your flavorrr profile URL: flavorrr.co/MrKnowhere</p>
             </span>
             <span className={styles.input_group}>
                 <label>
